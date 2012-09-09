@@ -1,0 +1,43 @@
+@import "normalize"
+@import "bourbon/bourbon"
+@import "neat/neat"
+
+=dimensionalise-text( $colour )
+  text-shadow: -1px -1px 0px $colour, -2px -2px 0px $colour, -3px -3px 0px $colour, -4px -4px 0px #AAA
+
+html, body
+  height: 100%
+  background: white
+  color: black
+
+header
+  @include outer-container
+  height: 10em
+  overflow: hidden
+  text-align: center
+  font-size: 1.5em
+  h1
+    margin-left:  auto
+    margin-right: auto
+    width: 8.5em
+    line-height: 4em
+    +dimensionalise-text( #333 )
+    text-indent: -1em
+  h1 img
+    height: 4em
+    float: left
+  h1 span
+    color: rgb(255,233,94)
+    +dimensionalise-text( rgb(209,191,77) )
+
+footer
+  text-align: center
+  background: black
+  color: white
+  height: 4em
+  h1
+    font-size: 1em
+  p
+    font-size: 0.8em
+  h1, p
+    margin: 0
