@@ -355,6 +355,41 @@ header {
     color: #ffe95e;
     text-shadow: -1px -1px 0px #d1bf4d, -2px -2px 0px #d1bf4d, -3px -3px 0px #d1bf4d, -4px -4px 0px #aaaaaa; }
 
+#page {
+  zoom: 1;
+  max-width: 75.99879em;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+  margin-top: -15em;
+  margin-bottom: -4em;
+  padding-top: 15em;
+  padding-bottom: 4em; }
+  #page:before, #page:after {
+    content: "";
+    display: table; }
+  #page:after {
+    clear: both; }
+  #page blockquote {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-right: 0;
+    padding: 1em 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2em; }
+    #page blockquote:last-child {
+      margin-right: 0; }
+    #page blockquote:before {
+      content: open-quote; }
+    #page blockquote:after {
+      content: close-quote; }
+    #page blockquote:before, #page blockquote:after {
+      font-weight: bold; }
+
 footer {
   text-align: center;
   background: black;
