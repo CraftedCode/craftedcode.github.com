@@ -1,0 +1,26 @@
+#page
+  @include outer-container
+  min-height: 100%
+  margin-top:    -15em
+  margin-bottom: -4em
+  padding-top:    15em
+  padding-bottom: 4em
+
+  blockquote
+    @include span-columns(12)
+    @include omega()
+    padding: 1em 0
+    margin: 0
+    text-align: center
+    font-size: 1.2em
+    &:before 
+      content: open-quote
+    &:after
+      content: close-quote
+    &:before, &:after
+      font-weight: bold
+
+  section
+    h1
+      border-bottom:  0.1em solid black
+      padding-bottom: 0.3em

@@ -10,56 +10,47 @@ html, body
   background: white
   color: black
 
-header
-  @include outer-container
-  height: 10em
-  overflow: hidden
-  text-align: center
-  font-size: 1.5em
-  h1
-    margin-left:  auto
-    margin-right: auto
-    width: 8.5em
-    line-height: 4em
-    +dimensionalise-text( #333 )
-    text-indent: -1em
-  h1 img
-    height: 4em
-    float: left
-  h1 span
-    color: rgb(255,233,94)
-    +dimensionalise-text( rgb(209,191,77) )
+@import 'header'
+@import 'page'
+@import 'footer'
 
 #page
-  @include outer-container
-  min-height: 100%
-  margin-top:    -15em
-  margin-bottom: -4em
-  padding-top:    15em
-  padding-bottom: 4em
+  section
+    padding-top:    1em
+    padding-bottom: 1em
 
-  blockquote
+  #work, #contact
     @include span-columns(12)
-    @include omega
-    padding: 1em 0
-    margin: 0
-    text-align: center
-    font-size: 1.2em
-    &:before 
-      content: open-quote
-    &:after
-      content: close-quote
-    &:before, &:after
-      font-weight: bold
+  #about
+    @include shift(3)
+    @include span-columns(6)
+  #more, #work, #contact
+    @include omega()
 
-footer
-  text-align: center
-  background: black
-  color: white
-  height: 4em
-  h1
-    font-size: 1em
-  p
-    font-size: 0.8em
-  h1, p
-    margin: 0
+  #about, #more
+    text-align: justify
+    padding-top: 1em
+    font-size: 1.5em
+    line-height: 1.1em
+
+  #work
+    ul
+      list-style: none
+      margin:  0
+      padding: 0
+    li
+      height: 560px
+      h2
+        background: white
+        float: left
+        margin: 1em
+        padding: 0.5em
+        font-size: 1.5em
+    #folksy
+      background: url('/images/folksy.png') no-repeat
+    #summer_of_cycling
+      background: url('/images/summer_of_cycling.png') no-repeat
+    #helpout
+      background: url('/images/helpout.png') no-repeat
+    #foodhospital
+      background: url('/images/foodhospital.png') no-repeat

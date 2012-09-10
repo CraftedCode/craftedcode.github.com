@@ -389,6 +389,9 @@ header {
       content: close-quote; }
     #page blockquote:before, #page blockquote:after {
       font-weight: bold; }
+  #page section h1 {
+    border-bottom: 0.1em solid black;
+    padding-bottom: 0.3em; }
 
 footer {
   text-align: center;
@@ -401,3 +404,49 @@ footer {
     font-size: 0.8em; }
   footer h1, footer p {
     margin: 0; }
+
+#page section {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+#page #work, #page #contact {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #page #work:last-child, #page #contact:last-child {
+    margin-right: 0; }
+#page #about {
+  margin-left: 25.58941%;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  #page #about:last-child {
+    margin-right: 0; }
+#page #more, #page #work, #page #contact {
+  margin-right: 0; }
+#page #about, #page #more {
+  text-align: justify;
+  padding-top: 1em;
+  font-size: 1.5em;
+  line-height: 1.1em; }
+#page #work ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+#page #work li {
+  height: 560px; }
+  #page #work li h2 {
+    background: white;
+    float: left;
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 1.5em; }
+#page #work #folksy {
+  background: url("/images/folksy.png") no-repeat; }
+#page #work #summer_of_cycling {
+  background: url("/images/summer_of_cycling.png") no-repeat; }
+#page #work #helpout {
+  background: url("/images/helpout.png") no-repeat; }
+#page #work #foodhospital {
+  background: url("/images/foodhospital.png") no-repeat; }
