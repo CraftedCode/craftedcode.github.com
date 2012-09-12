@@ -325,6 +325,9 @@ html, body {
   height: 100%;
   background: white;
   color: black; }
+  html a, body a {
+    color: black;
+    text-decoration: underline; }
 
 header {
   zoom: 1;
@@ -355,23 +358,27 @@ header {
     color: #ffe95e;
     text-shadow: -1px -1px 0px #d1bf4d, -2px -2px 0px #d1bf4d, -3px -3px 0px #d1bf4d, -4px -4px 0px #aaaaaa; }
 
-#page {
+#page1 {
+  margin-top: -15em;
+  padding-top: 15em; }
+
+#page2 {
+  margin-bottom: -4em;
+  padding-bottom: 4em; }
+
+.page, #page1, #page2 {
   zoom: 1;
   max-width: 75.99879em;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  min-height: 100%;
-  margin-top: -15em;
-  margin-bottom: -4em;
-  padding-top: 15em;
-  padding-bottom: 4em; }
-  #page:before, #page:after {
+  min-height: 100%; }
+  .page:before, #page1:before, #page2:before, .page:after, #page1:after, #page2:after {
     content: "";
     display: table; }
-  #page:after {
+  .page:after, #page1:after, #page2:after {
     clear: both; }
-  #page blockquote {
+  .page blockquote, #page1 blockquote, #page2 blockquote {
     display: block;
     float: left;
     margin-right: 2.35765%;
@@ -381,15 +388,15 @@ header {
     margin: 0;
     text-align: center;
     font-size: 1.2em; }
-    #page blockquote:last-child {
+    .page blockquote:last-child, #page1 blockquote:last-child, #page2 blockquote:last-child {
       margin-right: 0; }
-    #page blockquote:before {
+    .page blockquote:before, #page1 blockquote:before, #page2 blockquote:before {
       content: open-quote; }
-    #page blockquote:after {
+    .page blockquote:after, #page1 blockquote:after, #page2 blockquote:after {
       content: close-quote; }
-    #page blockquote:before, #page blockquote:after {
+    .page blockquote:before, #page1 blockquote:before, #page2 blockquote:before, .page blockquote:after, #page1 blockquote:after, #page2 blockquote:after {
       font-weight: bold; }
-  #page section h1 {
+  .page section h1, #page1 section h1, #page2 section h1 {
     border-bottom: 0.1em solid black;
     padding-bottom: 0.3em; }
 
@@ -405,48 +412,52 @@ footer {
   footer h1, footer p {
     margin: 0; }
 
-#page section {
+#page1 section, #page2 section {
   padding-top: 1em;
   padding-bottom: 1em; }
-#page #work, #page #contact {
+#page1 #work, #page1 #contact, #page2 #work, #page2 #contact {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 100%; }
-  #page #work:last-child, #page #contact:last-child {
+  #page1 #work:last-child, #page1 #contact:last-child, #page2 #work:last-child, #page2 #contact:last-child {
     margin-right: 0; }
-#page #about {
+#page1 #about, #page2 #about {
   margin-left: 25.58941%;
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 48.82117%; }
-  #page #about:last-child {
+  #page1 #about:last-child, #page2 #about:last-child {
     margin-right: 0; }
-#page #more, #page #work, #page #contact {
+#page1 #about, #page1 #work, #page1 #contact, #page2 #about, #page2 #work, #page2 #contact {
   margin-right: 0; }
-#page #about, #page #more {
+#page1 #about, #page1 #contact, #page2 #about, #page2 #contact {
   text-align: justify;
   padding-top: 1em;
-  font-size: 1.5em;
-  line-height: 1.1em; }
-#page #work ul {
+  line-height: 1.2em; }
+#page1 #about, #page2 #about {
+  font-weight: bold;
+  font-size: 2.4em; }
+#page1 #contact, #page2 #contact {
+  font-size: 1.5em; }
+#page1 #work ul, #page2 #work ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-#page #work li {
+#page1 #work li, #page2 #work li {
   height: 560px; }
-  #page #work li h2 {
+  #page1 #work li h2, #page2 #work li h2 {
     background: white;
     float: left;
     margin: 1em;
     padding: 0.5em;
     font-size: 1.5em; }
-#page #work #folksy {
+#page1 #work #folksy, #page2 #work #folksy {
   background: url("/images/folksy.png") no-repeat; }
-#page #work #summer_of_cycling {
+#page1 #work #summer_of_cycling, #page2 #work #summer_of_cycling {
   background: url("/images/summer_of_cycling.png") no-repeat; }
-#page #work #helpout {
+#page1 #work #helpout, #page2 #work #helpout {
   background: url("/images/helpout.png") no-repeat; }
-#page #work #foodhospital {
+#page1 #work #foodhospital, #page2 #work #foodhospital {
   background: url("/images/foodhospital.png") no-repeat; }

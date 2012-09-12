@@ -1,10 +1,14 @@
-#page
+#page1
+  @extend .page
+  margin-top:    -15em
+  padding-top:    15em
+#page2
+  @extend .page
+  margin-bottom: -4em
+  padding-bottom: 4em
+.page
   @include outer-container
   min-height: 100%
-  margin-top:    -15em
-  margin-bottom: -4em
-  padding-top:    15em
-  padding-bottom: 4em
 
   blockquote
     @include span-columns(12)

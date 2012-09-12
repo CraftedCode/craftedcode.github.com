@@ -10,11 +10,15 @@ html, body
   background: white
   color: black
 
+  a
+    color: black
+    text-decoration: underline
+
 @import 'header'
 @import 'page'
 @import 'footer'
 
-#page
+#page1, #page2
   section
     padding-top:    1em
     padding-bottom: 1em
@@ -24,14 +28,19 @@ html, body
   #about
     @include shift(3)
     @include span-columns(6)
-  #more, #work, #contact
+  #about, #work, #contact
     @include omega()
 
-  #about, #more
+  #about, #contact
     text-align: justify
     padding-top: 1em
+    line-height: 1.2em
+  #about
+
+    font-weight: bold
+    font-size: 2.4em
+  #contact
     font-size: 1.5em
-    line-height: 1.1em
 
   #work
     ul
