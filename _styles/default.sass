@@ -14,6 +14,9 @@ html, body
     color: black
     text-decoration: underline
 
+$mobile: max-width 476px
+$other:  min-width 476px
+
 @import 'header'
 @import 'page'
 @import 'footer'
@@ -26,12 +29,12 @@ html, body
   #work, #contact
     @include span-columns(12)
   #about
-    @include breakpoint(min-width 476px 12)
-      @include shift(3)
-      @include span-columns(6)
-    @include breakpoint(max-width 476px)
+    @include breakpoint($mobile)
       @include shift(1)
       @include span-columns(10)
+    @include breakpoint($other)
+      @include shift(3)
+      @include span-columns(6)
   #about, #work, #contact
     @include omega()
 
@@ -45,6 +48,8 @@ html, body
     font-size: 2.4em
   #contact
     font-size: 1.5em
+    @include breakpoint($mobile)
+      padding: 1em
 
   #work
     ul
@@ -52,7 +57,12 @@ html, body
       margin:  0
       padding: 0
     li
-      height: 560px
+      @include background-size(100%,auto)
+      background-size: 100% auto
+      @include breakpoint($mobile)
+        height: 400px
+      @include breakpoint($other)
+        height: 560px
       h2
         background: white
         float: left

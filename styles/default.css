@@ -358,6 +358,14 @@ header {
     color: #ffe95e;
     text-shadow: -1px -1px 0px #d1bf4d, -2px -2px 0px #d1bf4d, -3px -3px 0px #d1bf4d, -4px -4px 0px #aaaaaa; }
 
+@media screen and (max-width: 476px) {
+  header {
+    padding: 0 1em;
+    height: 6em; }
+    header h1 img {
+      height: 2em; }
+    header h1 {
+      line-height: 2em; } }
 #page1 {
   margin-top: -15em;
   padding-top: 15em; }
@@ -422,15 +430,6 @@ footer {
   width: 100%; }
   #page1 #work:last-child, #page1 #contact:last-child, #page2 #work:last-child, #page2 #contact:last-child {
     margin-right: 0; }
-@media screen and (min-width: 476px) {
-  #page1 #about, #page2 #about {
-    margin-left: 25.58941%;
-    display: block;
-    float: left;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    #page1 #about:last-child, #page2 #about:last-child {
-      margin-right: 0; } }
 @media screen and (max-width: 476px) {
   #page1 #about, #page2 #about {
     margin-left: 8.5298%;
@@ -438,6 +437,15 @@ footer {
     float: left;
     margin-right: 2.35765%;
     width: 82.94039%; }
+    #page1 #about:last-child, #page2 #about:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 476px) {
+  #page1 #about, #page2 #about {
+    margin-left: 25.58941%;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
     #page1 #about:last-child, #page2 #about:last-child {
       margin-right: 0; } }
 #page1 #about, #page1 #work, #page1 #contact, #page2 #about, #page2 #work, #page2 #contact {
@@ -451,12 +459,26 @@ footer {
   font-size: 2.4em; }
 #page1 #contact, #page2 #contact {
   font-size: 1.5em; }
+  @media screen and (max-width: 476px) {
+    #page1 #contact, #page2 #contact {
+      padding: 1em; } }
 #page1 #work ul, #page2 #work ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 #page1 #work li, #page2 #work li {
-  height: 560px; }
+  -webkit-background-size: 100%, auto;
+  -moz-background-size: 100%, auto;
+  -ms-background-size: 100%, auto;
+  -o-background-size: 100%, auto;
+  background-size: 100%, auto;
+  background-size: 100% auto; }
+  @media screen and (max-width: 476px) {
+    #page1 #work li, #page2 #work li {
+      height: 400px; } }
+  @media screen and (min-width: 476px) {
+    #page1 #work li, #page2 #work li {
+      height: 560px; } }
   #page1 #work li h2, #page2 #work li h2 {
     background: white;
     float: left;
