@@ -26,8 +26,12 @@ html, body
   #work, #contact
     @include span-columns(12)
   #about
-    @include shift(3)
-    @include span-columns(6)
+    @include breakpoint(min-width 476px 12)
+      @include shift(3)
+      @include span-columns(6)
+    @include breakpoint(max-width 476px)
+      @include shift(1)
+      @include span-columns(10)
   #about, #work, #contact
     @include omega()
 
