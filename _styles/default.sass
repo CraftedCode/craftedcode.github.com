@@ -59,12 +59,11 @@ $other:  min-width 476px
       padding: 0
     li
       position: relative
+      @include background-size(100%,auto)
       @include breakpoint($mobile)
-        @include background-size(100%)
         h2
-          margin-bottom: 360px
+          margin-bottom: 260px
       @include breakpoint($other)
-        @include background-size(100%,auto)
         height: 560px
         h2
           float: left
