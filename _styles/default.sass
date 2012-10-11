@@ -62,14 +62,19 @@ $other:  min-width 476px
       @include background-size(100%,auto)
       @include breakpoint($mobile)
         h2
-          margin-bottom: 150px
+          padding: 0 0.5em
+        p
+          margin: 0
+          padding: 0.5em
       @include breakpoint($other)
         height: 560px
         h2
-          float: left
-          margin: 1em
-        p
+          top: 0.5em
+          left: 1em
+        h2, p
           position: absolute
+          padding: 0.5em
+        p
           right: 0.25em
           bottom: 0
           width: 80%
@@ -77,20 +82,9 @@ $other:  min-width 476px
       h2
         background: white
       h2, p
-        padding: 0.5em
         font-size: 1.5em
       p
-        clear: left
         background: #222
         color: white
     a
       text-decoration: none
-
-    #folksy
-      background: url('/images/folksy.png') no-repeat
-    #summer_of_cycling
-      background: url('/images/summer_of_cycling.png') no-repeat
-    #helpout
-      background: url('/images/helpout.png') no-repeat
-    #foodhospital
-      background: url('/images/foodhospital.png') no-repeat
