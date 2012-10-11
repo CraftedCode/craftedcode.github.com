@@ -469,20 +469,26 @@ footer {
     margin: 0;
     padding: 0; }
   #page1 #work li, #page2 #work li {
-    position: relative;
-    -webkit-background-size: 100%, auto;
-    -moz-background-size: 100%, auto;
-    -ms-background-size: 100%, auto;
-    -o-background-size: 100%, auto;
-    background-size: 100%, auto; }
+    position: relative; }
     @media screen and (max-width: 476px) {
-      #page1 #work li h2, #page2 #work li h2 {
-        padding: 0 0.5em; }
-      #page1 #work li p, #page2 #work li p {
-        margin: 0;
-        padding: 0.5em; } }
+      #page1 #work li, #page2 #work li {
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -ms-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%; }
+        #page1 #work li h2, #page2 #work li h2 {
+          padding: 0 0.5em; }
+        #page1 #work li p, #page2 #work li p {
+          margin: 0;
+          padding: 0.5em; } }
     @media screen and (min-width: 476px) {
       #page1 #work li, #page2 #work li {
+        -webkit-background-size: 100%, auto;
+        -moz-background-size: 100%, auto;
+        -ms-background-size: 100%, auto;
+        -o-background-size: 100%, auto;
+        background-size: 100%, auto;
         height: 560px; }
         #page1 #work li h2, #page2 #work li h2 {
           top: 0.5em;
