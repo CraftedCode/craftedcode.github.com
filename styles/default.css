@@ -477,7 +477,7 @@ footer {
     background-size: 100%, auto; }
     @media screen and (max-width: 476px) {
       #page1 #work li h2, #page2 #work li h2 {
-        margin-bottom: 260px; } }
+        margin-bottom: 150px; } }
     @media screen and (min-width: 476px) {
       #page1 #work li, #page2 #work li {
         height: 560px; }
