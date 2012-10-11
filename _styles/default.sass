@@ -52,23 +52,41 @@ $other:  min-width 476px
       padding: 1em
 
   #work
+    position: relative
     ul
       list-style: none
       margin:  0
       padding: 0
     li
-      @include background-size(100%,auto)
-      background-size: 100% auto
+      position: relative
       @include breakpoint($mobile)
-        height: 400px
+        @include background-size(100%)
+        h2
+          margin-bottom: 360px
       @include breakpoint($other)
+        @include background-size(100%,auto)
         height: 560px
+        h2
+          float: left
+          margin: 1em
+        p
+          position: absolute
+          right: 0.25em
+          bottom: 0
+          width: 80%
+          background: rgba(16,16,16,0.8)
       h2
         background: white
-        float: left
-        margin: 1em
+      h2, p
         padding: 0.5em
         font-size: 1.5em
+      p
+        clear: left
+        background: #222
+        color: white
+    a
+      text-decoration: none
+
     #folksy
       background: url('/images/folksy.png') no-repeat
     #summer_of_cycling
